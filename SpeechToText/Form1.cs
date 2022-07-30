@@ -58,7 +58,5 @@ namespace SpeechToText
                 erase = true;
             }
         }
-
-        //protected override void OnPaintBackground(PaintEventArgs e) { }
     }
 }
