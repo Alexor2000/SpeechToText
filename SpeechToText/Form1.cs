@@ -12,8 +12,6 @@ namespace SpeechToText
 {
     public partial class Form1 : Form
     {
-        bool erase = false;
-
         public Form1()
         {
             InitializeComponent();
