@@ -34,12 +34,12 @@
             // textLabel
             // 
             this.textLabel.AutoSize = true;
-            this.textLabel.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textLabel.Location = new System.Drawing.Point(369, 208);
+            this.textLabel.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textLabel.Location = new System.Drawing.Point(373, 217);
             this.textLabel.Name = "textLabel";
-            this.textLabel.Size = new System.Drawing.Size(99, 33);
+            this.textLabel.Size = new System.Drawing.Size(120, 27);
             this.textLabel.TabIndex = 0;
-            this.textLabel.Text = "Waiting";
+            this.textLabel.Text = "Waiting ...";
             // 
             // subtitlesForm
             // 

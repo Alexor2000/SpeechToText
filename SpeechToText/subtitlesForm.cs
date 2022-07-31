@@ -31,6 +31,7 @@ namespace SpeechToText
             Location = new Point(Location.X, Location.Y + Screen.PrimaryScreen.WorkingArea.Height / 2 - 200);
 
             textLabel.BackColor = Color.Transparent;
+            textLabel.ForeColor = Color.Black;
 
             UpdateLabelLocation();
         }
