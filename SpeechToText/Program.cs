@@ -8,6 +8,9 @@ namespace SpeechToText
 {
     internal static class Program
     {
+        public static subtitlesForm subForm;
+        public static parametersForm paramForm;
+
         /// <summary>
         /// Point d'entrée principal de l'application.
         /// </summary>
@@ -16,7 +19,9 @@ namespace SpeechToText
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            subForm = new subtitlesForm();
+            paramForm = new parametersForm();
+            Application.Run(new MultiFormContext(subForm, paramForm));
         }
     }
 }

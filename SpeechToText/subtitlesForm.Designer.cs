@@ -1,6 +1,6 @@
 ﻿namespace SpeechToText
 {
-    partial class Form1
+    partial class subtitlesForm
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -41,15 +41,15 @@
             this.textLabel.TabIndex = 0;
             this.textLabel.Text = "Waiting";
             // 
-            // Form1
+            // subtitlesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.textLabel);
-            this.Name = "Form1";
+            this.Name = "subtitlesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Form1";
+            this.Text = "Subtitles";
             this.ResumeLayout(false);
             this.PerformLayout();
 

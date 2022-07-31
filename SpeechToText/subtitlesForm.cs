@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace SpeechToText
 {
-    public partial class Form1 : Form
+    public partial class subtitlesForm : Form
     {
         bool erase = false;
 
-        public Form1()
+        public subtitlesForm()
         {
             InitializeComponent();
             SetStyle(ControlStyles.SupportsTransparentBackColor, true);
