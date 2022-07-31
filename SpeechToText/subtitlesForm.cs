@@ -58,5 +58,10 @@ namespace SpeechToText
                 erase = true;
             }
         }
+
+        public void lab(string put)
+        {
+            textLabel.Text = put;
+        }
     }
 }

@@ -11,6 +11,8 @@ namespace SpeechToText
         public static subtitlesForm subForm;
         public static parametersForm paramForm;
 
+        public static speechToText speechToText;
+
         /// <summary>
         /// Point d'entrée principal de l'application.
         /// </summary>
@@ -21,6 +23,7 @@ namespace SpeechToText
             Application.SetCompatibleTextRenderingDefault(false);
             subForm = new subtitlesForm();
             paramForm = new parametersForm();
+            speechToText = new speechToText();
             Application.Run(new MultiFormContext(subForm, paramForm));
         }
     }

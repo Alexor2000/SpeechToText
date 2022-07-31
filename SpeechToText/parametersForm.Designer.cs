@@ -28,46 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.startingButton = new System.Windows.Forms.Button();
+            this.onAirTextbox = new System.Windows.Forms.TextBox();
+            this.endingButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // startingButton
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.startingButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.startingButton.Location = new System.Drawing.Point(12, 12);
+            this.startingButton.Name = "startingButton";
+            this.startingButton.Size = new System.Drawing.Size(127, 23);
+            this.startingButton.TabIndex = 0;
+            this.startingButton.Text = "Start";
+            this.startingButton.UseVisualStyleBackColor = true;
+            this.startingButton.Click += new System.EventHandler(this.startingButton_Click);
             // 
-            // textBox1
+            // onAirTextbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(260, 20);
-            this.textBox1.TabIndex = 2;
+            this.onAirTextbox.Location = new System.Drawing.Point(12, 41);
+            this.onAirTextbox.Name = "onAirTextbox";
+            this.onAirTextbox.Size = new System.Drawing.Size(260, 20);
+            this.onAirTextbox.TabIndex = 2;
             // 
-            // button2
+            // endingButton
             // 
-            this.button2.Location = new System.Drawing.Point(145, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.endingButton.Location = new System.Drawing.Point(145, 12);
+            this.endingButton.Name = "endingButton";
+            this.endingButton.Size = new System.Drawing.Size(127, 23);
+            this.endingButton.TabIndex = 3;
+            this.endingButton.Text = "End";
+            this.endingButton.UseVisualStyleBackColor = true;
+            this.endingButton.Click += new System.EventHandler(this.endingButton_Click);
             // 
             // parametersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(283, 76);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(284, 76);
+            this.Controls.Add(this.endingButton);
+            this.Controls.Add(this.onAirTextbox);
+            this.Controls.Add(this.startingButton);
             this.Name = "parametersForm";
-            this.Text = "parametersForm";
+            this.Text = "Speech-To-Text";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.parametersForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -76,8 +79,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button startingButton;
+        private System.Windows.Forms.TextBox onAirTextbox;
+        private System.Windows.Forms.Button endingButton;
     }
 }
