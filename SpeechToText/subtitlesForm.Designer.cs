@@ -28,36 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // textLabel
-            // 
-            this.textLabel.AutoSize = true;
-            this.textLabel.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textLabel.Location = new System.Drawing.Point(373, 217);
-            this.textLabel.Name = "textLabel";
-            this.textLabel.Size = new System.Drawing.Size(120, 27);
-            this.textLabel.TabIndex = 0;
-            this.textLabel.Text = "Waiting ...";
             // 
             // subtitlesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textLabel);
             this.Name = "subtitlesForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Subtitles";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label textLabel;
     }
 }
 
