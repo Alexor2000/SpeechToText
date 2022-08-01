@@ -13,8 +13,6 @@ namespace SpeechToText
 {
     public partial class parametersForm : Form
     {
-        private audioStreaming audioStreaming = new audioStreaming();
-
         public parametersForm()
         {
             InitializeComponent();

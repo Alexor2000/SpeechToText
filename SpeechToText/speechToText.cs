@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Speech.Recognition;
 using System.IO;
 using System.Speech.AudioFormat;
+using System.Globalization;
 
 namespace SpeechToText
 {
@@ -15,13 +16,20 @@ namespace SpeechToText
 
         public speechToText()
         {
-            //GrammarBuilder builder = new GrammarBuilder();
-            //builder.Culture = new System.Globalization.CultureInfo("en-GB");
-            //builder.Append(new Choices(File.ReadAllLines("english.txt")));
+            //Choices language = new Choices(File.ReadAllLines("english.txt"));
+
+            //GrammarBuilder grammarBuilder = new GrammarBuilder();
+            //CultureInfo cultureInfo = new CultureInfo("fr-FR");
+            //grammarBuilder.Culture = cultureInfo;
+            //grammarBuilder.Append(language);
+
+            //Grammar grammar = new Grammar(grammarBuilder);
+
             engine.SetInputToDefaultAudioDevice();
-            engine.LoadGrammarAsync(new Grammar(new GrammarBuilder(new Choices(File.ReadAllLines("english.txt")))));
+            engine.LoadGrammar(new DictationGrammar());
             engine.SpeechRecognized += new EventHandler<SpeechRecognizedEventArgs>(SpeechRecognized);
-            engine.RecognizeAsync(RecognizeMode.Multiple);
+            engine.RecognizeAsync(RecognizeMode.Single);
+
             Console.WriteLine("Ready");
         }
 

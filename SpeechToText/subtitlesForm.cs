@@ -67,7 +67,7 @@ namespace SpeechToText
 
         public void lab(string put)
         {
-            textLabel.Text = put;
+            textLabel.Text += put;
         }
     }
 
